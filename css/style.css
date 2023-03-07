@@ -1,0 +1,30 @@
+/* Global settings */
+* {
+    font-family: system-ui;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #000;
+}
+
+/* Paragraph settings */
+p {
+    color: #fff;
+    white-space: pre-line;
+}
+
+/* Centered (c) text */
+.c {
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Image settings */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
