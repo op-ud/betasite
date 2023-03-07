@@ -1,2 +1,2 @@
-# BetaSite
-> The opud.io website beta structure
+## BetaSite
+The opud.io website beta
