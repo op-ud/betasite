@@ -1,18 +1,22 @@
 <!doctype html>
 <html>
-<head>
+  <head>
+    <!-- The title of this webpage is "Loading..." because index.html
+    acts exclusively as a redirect to the opud.io/home page -->
     <title>Loading...</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        #delay {
-            color: #fff;
-
-        }</style>
-</head>
-<a id="delay" href="html/home.html">Click here if you are not automatically redirected.</a>
-<script>
-    setTimeout(function() {
-        document.getElementById('delay').style.display = 'block';
-    }, 500);
-</script>
+    <meta http-equiv="refresh" content="0; url=html/home.html">
+<!-- If the webpage redirect does not work, a link to home is created -->
+    <script>
+		window.onload = function() {
+			setTimeout(function() {
+				document.getElementById("delayed-text").style.display = "block";
+			}, 1000);
+		}
+	</script>
+	<style>
+		#delayed-text {
+			display: none;
+		}
+	</style>
+  </head>
 </html>
