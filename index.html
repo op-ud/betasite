@@ -4,9 +4,10 @@
     <!-- The title of this webpage is "Loading..." because index.html
     acts exclusively as a redirect to the home page -->
     <title>Loading...</title>
-    <meta http-equiv="refresh" content="0; url=html/home.html">
-		<!-- If the webpage redirect does not work, a link to home is created after .4 seconds -->
-		<style>#delayed-text {display: none;}</style>
+      <meta http-equiv="refresh" content="0; url=http://youtube.com">
+      <!-- If the webpage redirect does not work, a link to home is created after .4 seconds -->
+      <style>#delayed-text {display: none; position: absolute;top: 10%; left: 40%;}</style>
+      <link rel="stylesheet" href="css/style.css">
     <script>
 		window.onload = function() {
 			setTimeout(function() {
@@ -16,6 +17,6 @@
 	</script>
   </head>
 	<div id="delayed-text">
-		<a href="html/home.html">If you are not automatically redirected, please click this link</a>
+		<a style="color: #fff" href="html/home.html">If you are not automatically redirected, please click this link</a>
 	</div>
 </html>
