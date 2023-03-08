@@ -1,22 +1,25 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- The title of this webpage is "Loading..." because index.html
-    acts exclusively as a redirect to the home page -->
-    <title>Loading...</title>
-      <meta http-equiv="refresh" content="0; url=http://youtube.com">
-      <!-- If the webpage redirect does not work, a link to home is created after .4 seconds -->
-      <style>#delayed-text {display: none; position: absolute;top: 10%; left: 40%;}</style>
-      <link rel="stylesheet" href="css/style.css">
-    <script>
-		window.onload = function() {
-			setTimeout(function() {
-				document.getElementById("delayed-text").style.display = "block";
-			}, 400);
-		}
-	</script>
-  </head>
-	<div id="delayed-text">
-		<a style="color: #fff" href="html/home.html">If you are not automatically redirected, please click this link</a>
-	</div>
+<head>
+  <!-- Webpage title: "Loading..." -->
+  <title>Loading...</title>
+  <!-- Redirect to home -->
+  <!-- <meta http-equiv="refresh" content="0; url=html/home.html"> -->
+  <meta http-equiv="refresh" content="0; url=http://opud.io">
+  <!-- Reference main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- If the webpage redirect does not work after 5 seconds, a link to home is created -->
+  <!-- Text Style -->
+  <style>
+    #popup {display: none; color: #fff;}
+    #popup:hover {color: #0ee;}
+  </style>
+  <!-- js popup Timer -->
+  <script>
+    window.onload = function() { setTimeout(function() {
+      document.getElementById("popup").style.display = "block";
+    }, 500);}
+  </script>
+</head>
+<a id="popup" href="html/home.html">Automatic redirect didn't work...please click this link</a>
 </html>
