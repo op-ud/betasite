@@ -5,18 +5,19 @@
     acts exclusively as a redirect to the opud.io/home page -->
     <title>Loading...</title>
     <meta http-equiv="refresh" content="0; url=html/home.html">
-<!-- If the webpage redirect does not work, a link to home is created -->
+		<!-- If the webpage redirect does not work, a link to home is created -->
     <script>
 		window.onload = function() {
 			setTimeout(function() {
 				document.getElementById("delayed-text").style.display = "block";
-			}, 1000);
+			}, 400);
 		}
 	</script>
 	<style>
-		#delayed-text {
-			display: none;
-		}
+		#delayed-text {display: none;}
 	</style>
   </head>
+	<div id="delayed-text">
+		<a href="html/home.html">If you are not automatically redirected, please click this link</a>
+	</div>
 </html>
