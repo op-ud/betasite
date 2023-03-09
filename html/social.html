@@ -1,8 +1,18 @@
-<!-- Redirect -->
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=socials.html">
+  <title>Loading...</title>
+  <meta http-equiv="refresh" content="0; url=socials.html">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    #popup {display: none; color: #fff;}
+    #popup:hover {color: #0ee;}
+  </style>
+  <script>
+    window.onload = function() { setTimeout(function() {
+      document.getElementById("popup").style.display = "block";
+    }, 500);}
+  </script>
 </head>
+<a id="popup" href="socials.html">Automatic redirect didn't work...please click this link</a>
 </html>
